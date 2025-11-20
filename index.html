@@ -9,7 +9,7 @@
 body {
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
-    background-color: #000; /* Черный фон, как на скриншоте */
+    background-color: #f6f6f6;
     text-align: center;
     padding: 0;
 }
@@ -22,7 +22,7 @@ body {
 
 /* Yuxarı hissə (Header + Düymələr) - Qara fon */
 .top-section-wrapper {
-    background-color: #000; /* Черный фон */
+    background-color: #000;
     padding-bottom: 30px;
     margin-bottom: -15px;
 }
@@ -30,7 +30,7 @@ body {
 /* Header elementləri */
 .taplink-header {
     padding: 20px 20px 10px 20px;
-    color: #fff; /* Белый текст */
+    color: #fff;
 }
 
 /* Логотип */
@@ -38,7 +38,7 @@ body {
     display: block;
     width: 60px;
     height: 60px;
-    background-color: #333; /* Темный круг вокруг лого */
+    background-color: #fff;
     border-radius: 50%;
     margin: 0 auto 5px auto;
     overflow: hidden;
@@ -83,19 +83,12 @@ body {
     font-size: 16px;
     color: #fff;
     display: flex;
-    align-items: center; /* Центрирование по вертикали */
-    justify-content: flex-start; /* Выравнивание по левому краю */
-    text-align: left;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
     box-shadow: 0 4px 6px rgba(0,0,0,0.15);
     transition: background-color 0.2s;
-    position: relative; /* Для позиционирования иконки */
-}
-
-.chat-button .content-wrapper {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1; /* Чтобы текст занимал доступное пространство */
-    margin-left: 20px; /* Отступ от иконки */
 }
 
 .chat-button .main-text {
@@ -110,18 +103,6 @@ body {
     margin-top: 2px;
 }
 
-/* Иконки */
-.chat-button .icon {
-    font-style: normal; 
-    font-size: 24px; /* Увеличенный размер для иконок */
-    line-height: 1;
-    color: #fff;
-    position: absolute; /* Абсолютное позиционирование */
-    left: 20px; /* Отступ слева */
-    top: 50%; /* Центр по вертикали */
-    transform: translateY(-50%); /* Точное центрирование */
-}
-
 /* Rəng sxemi */
 .whatsapp-main { background: #25d366; }
 .telegram-main { background: #0088cc; }
@@ -133,8 +114,6 @@ body {
     gap: 12px;
     width: 90%;
     margin: 0 auto 20px auto;
-    background-color: #000; /* Черный фон для всего блока FAQ */
-    color: #fff; /* Белый текст для разделения */
 }
 
 /* Разделитель между логическими блоками */
@@ -142,7 +121,7 @@ body {
     border: none;
     height: 1px;
     margin: 25px 0 15px 0;
-    background-color: #333; /* Темный разделитель */
+    background-color: #ddd;
     position: relative;
 }
 
@@ -153,23 +132,23 @@ body {
     transform: translate(-50%, -50%);
     margin: 0;
     padding: 0 15px;
-    background-color: #000; /* Черный фон для текста разделителя */
-    color: #888; /* Более светлый цвет для текста разделителя */
+    background-color: #f6f6f6; /* Цвет фона body */
+    color: #666;
     font-size: 14px;
     font-weight: 600;
     text-transform: uppercase;
 }
 
 .faq-card {
-    background: #1a1a1a; /* Темный фон для карточек FAQ */
+    background: #fff;
     border-radius: 12px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.05);
     overflow: hidden;
 }
 
 .collapsible {
-    background: #1a1a1a; /* Темный фон для кнопок FAQ */
-    color: #fff; /* Белый текст для кнопок FAQ */
+    background: #fff;
+    color: #000;
     cursor: pointer;
     padding: 16px 20px;
     border: none;
@@ -211,9 +190,9 @@ body {
     padding: 0 20px 20px 20px;
     display: none;
     overflow: hidden;
-    background: #1a1a1a; /* Темный фон для содержимого FAQ */
+    background: #fff;
     font-size: 14px;
-    color: #eee; /* Более светлый текст для содержимого FAQ */
+    color: #333;
     line-height: 1.5;
     text-align: left;
 }
@@ -225,14 +204,14 @@ body {
     padding-left: 20px;
 }
 .content strong {
-    font-weight: 700;
+    font-weight: 600;
 }
 .content h4 {
     margin-top: 10px;
     margin-bottom: 5px;
     font-size: 15px;
     font-weight: 700;
-    color: #fff; /* Белый текст для заголовков в FAQ */
+    color: #000;
 }
 </style>
 </head>
@@ -246,22 +225,17 @@ body {
         <img src="https://i.postimg.cc/MK7hQ4GD/IMG-20251119-140712-396.jpg" alt="Mazda CX-9 Logo">
       </div>
       <h1>cx9tb</h1>
-      <h2></h2> 
-    </div>
+      <h2></h2> </div>
 
     <div class="top-buttons">
       <a class="chat-button whatsapp-main" href="https://chat.whatsapp.com/KXNDRzr1JfAEwviBFaAumV?mode=hqrt3" target="_blank">
-        <span class="icon">&#x2705;</span> <div class="content-wrapper">
-            <span class="main-text">Общий чат CX-9 ТB</span>
-            <span class="sub-text">https://cx9tb.ru</span>
-        </div>
+        <span class="main-text">WhatsApp Chat</span>
+        <span class="sub-text">Söhbət Qrupu</span>
       </a>
 
       <a class="chat-button telegram-main" href="https://t.me/Mazda_CX9_Azerbaijan" target="_blank">
-        <span class="icon">&#x2708;</span> <div class="content-wrapper">
-            <span class="main-text">Чат в Telegram</span>
-            <span class="sub-text">Дополнительный чат в TG</span>
-        </div>
+        <span class="main-text">Telegram Chat</span>
+        <span class="sub-text">Əlavə söhbət</span>
       </a>
       
     </div>
@@ -277,9 +251,9 @@ body {
         <span class="arrow"></span>
       </button>
       <div class="content">
-        <p><strong><span style="color: #eee;">+994 77 600 05 10 (Dəyanət Usta) Bakı</span></strong></p>
-        <p><strong><span style="color: #eee;">+994 55 831 71 19 (Fuad Usta) Bakı</span></strong></p>
-        <p><strong><span style="color: #eee;">+994 51 460 96 94 (Faiq Usta) Lənkəran</span></strong></p>
+        <p><strong><span style="color: black;">+994 77 600 05 10 (Dəyanət Usta) Bakı</span></strong></p>
+        <p><strong><span style="color: black;">+994 55 831 71 19 (Fuad Usta) Bakı</span></strong></p>
+        <p><strong><span style="color: black;">+994 51 460 96 94 (Faiq Usta) Lənkəran</span></strong></p>
       </div>
     </div>
     
@@ -289,7 +263,7 @@ body {
         <span class="arrow"></span>
       </button>
       <div class="content">
-        <p><strong><span style="color: #eee;">+994 55 558 85 80 (Zeynal Usta) Bakı</span></strong></p>
+        <p><strong><span style="color: black;">+994 55 558 85 80 (Zeynal Usta) Bakı</span></strong></p>
       </div>
     </div>
     
@@ -301,7 +275,7 @@ body {
         <span class="arrow"></span>
       </button>
       <div class="content">
-        <p><span style="color: #eee;">Nəzərinizə uyğun "<strong>5W30</strong>" (API SL/CF və ILSAС GF-4 və GF-5, ACEA A5/B5 tələbləri). Tam həcm "<strong>5.9L</strong>", filtr dəyişərkən "<strong>5.2L</strong>", filtrsiz "<strong>4.7L</strong>".</span></p>
+        <p><span style="color: black;">Nəzərinizə uyğun "<strong>5W30</strong>" (API SL/CF və ILSAС GF-4 və GF-5, ACEA A5/B5 tələbləri). Tam həcm "<strong>5.9L</strong>", filtr dəyişərkən "<strong>5.2L</strong>", filtrsiz "<strong>4.7L</strong>".</span></p>
       </div>
     </div>
     
@@ -311,7 +285,7 @@ body {
         <span class="arrow"></span>
       </button>
       <div class="content">
-        <p><span style="color: #eee;">Originalda "<strong>FL22</strong>" (Ford markası) və ya "<strong>G12</strong>", rəng: "<strong>yaşıl</strong>". Radiator dəyişdirilərkən 7−8 litr, tam həcm 12 litr. Brendlər: FL22 (original), TCL, Akira, Mobil, Revanol FL22. "<strong>Antifrizə qənaət etmək olmaz</strong>", alüminiumun oksidləşməsi səbəbindən AGA kimi ucuz məhsulları almayın.</span></p>
+        <p><span style="color: black;">Originalda "<strong>FL22</strong>" (Ford markası) və ya "<strong>G12</strong>", rəng: "<strong>yaşıl</strong>". Radiator dəyişdirilərkən 7−8 litr, tam həcm 12 litr. Brendlər: FL22 (original), TCL, Akira, Mobil, Revanol FL22. "<strong>Antifrizə qənaət etmək olmaz</strong>", alüminiumun oksidləşməsi səbəbindən AGA kimi ucuz məhsulları almayın.</span></p>
       </div>
     </div>
     
@@ -321,8 +295,8 @@ body {
         <span class="arrow"></span>
       </button>
       <div class="content">
-        <p><span style="color: #eee;">İstənilən "<strong>JWS3309</strong>". Toyotanın bazardan çıxmasından sonra "<strong>Toyota T4 tövsiyə edilmir</strong>". Qismən dəyişmə 4 litr, filtr dəyişdirilərkən 8 litr.</span></p>
-        <p><span style="color: #eee;">Brendlər: Toyota T4 ("<strong>tövsiyə edilmir</strong>"), Idemtsu TLX, Ravenol və d.r.</span></p>
+        <p><span style="color: black;">İstənilən "<strong>JWS3309</strong>". Toyotanın bazardan çıxmasından sonra "<strong>Toyota T4 tövsiyə edilmir</strong>". Qismən dəyişmə 4 litr, filtr dəyişdirilərkən 8 litr.</span></p>
+        <p><span style="color: black;">Brendlər: Toyota T4 ("<strong>tövsiyə edilmir</strong>"), Idemtsu TLX, Ravenol və d.r.</span></p>
       </div>
     </div>
     
@@ -332,7 +306,7 @@ body {
         <span class="arrow"></span>
       </button>
       <div class="content">
-        <p><span style="color: #eee;">1. AKPP-dəki ilə eyni. Həcm 2 litr.<br>
+        <p><span style="color: black;">1. AKPP-dəki ilə eyni. Həcm 2 litr.<br>
            2. Mazda Original Oil ATF M-V<br>
            3. Mazda Original Oil Dexron M3.<br>
            4. GUR üçün "<strong>PSF tipli yağ</strong>" istifadə olunur. Ravenol və digər brendlərdə var.</span></p>
@@ -345,7 +319,7 @@ body {
         <span class="arrow"></span>
       </button>
       <div class="content">
-        <p><span style="color: #eee;">İstənilən "<strong>75−80w140 GL5</strong>". Həcm "<strong>550ml/650ml/850ml</strong>". Brendlər: Revanol, Motul, Castrol, Ravenol.</span></p>
+        <p><span style="color: black;">İstənilən "<strong>75−80w140 GL5</strong>". Həcm "<strong>550ml/650ml/850ml</strong>". Brendlər: Revanol, Motul, Castrol, Ravenol.</span></p>
       </div>
     </div>
     
@@ -355,7 +329,7 @@ body {
         <span class="arrow"></span>
       </button>
       <div class="content">
-        <p><span style="color: #eee;">"<strong>75−80w90</strong>", həcm "<strong>1 litr</strong>". "<strong>Sintetik</strong>", mineral deyil.</span></p>
+        <p><span style="color: black;">"<strong>75−80w90</strong>", həcm "<strong>1 litr</strong>". "<strong>Sintetik</strong>", mineral deyil.</span></p>
       </div>
     </div>
 
@@ -365,7 +339,7 @@ body {
             <span class="arrow"></span>
         </button>
         <div class="content">
-            <p><span style="color: #eee;">R-134a, 660–710 qr.</span></p>
+            <p><span style="color: black;">R-134a, 660–710 qr.</span></p>
         </div>
     </div>
     
@@ -377,18 +351,18 @@ body {
         <span class="arrow"></span>
       </button>
       <div class="content">
-        <p><span style="color: #eee;">Sərf asılıdır:</span></p>
+        <p><span style="color: black;">Sərf asılıdır:</span></p>
         <ol>
-          <li><span style="color: #eee;">Sürmə tərzi.</span></li>
-          <li><span style="color: #eee;">Yanacaq keyfiyyəti.</span></li>
-          <li><span style="color: #eee;">Forsunkaların və yanacaq sisteminin vəziyyəti.</span></li>
-          <li><span style="color: #eee;">Şamlar, yanacaq korreksiyası (kütləvi hava sərfi sensoru, oksigen sensorları).</span></li>
-          <li><span style="color: #eee;">Hava filtri, drosel (boğaz) klapanı.</span></li>
-          <li><span style="color: #eee;">Silindr-porşen qrupunun (ЦПГ) vəziyyəti.</span></li>
-          <li><span style="color: #eee;">Əyləc dayaqlarının (suport) vəziyyəti.</span></li>
-          <li><span style="color: #eee;">Şəhər hərəkət dövrü.</span></li>
+          <li><span style="color: black;">Sürmə tərzi.</span></li>
+          <li><span style="color: black;">Yanacaq keyfiyyəti.</span></li>
+          <li><span style="color: black;">Forsunkaların və yanacaq sisteminin vəziyyəti.</span></li>
+          <li><span style="color: black;">Şamlar, yanacaq korreksiyası (kütləvi hava sərfi sensoru, oksigen sensorları).</span></li>
+          <li><span style="color: black;">Hava filtri, drosel (boğaz) klapanı.</span></li>
+          <li><span style="color: black;">Silindr-porşen qrupunun (ЦПГ) vəziyyəti.</span></li>
+          <li><span style="color: black;">Əyləc dayaqlarının (suport) vəziyyəti.</span></li>
+          <li><span style="color: black;">Şəhər hərəkət dövrü.</span></li>
         </ol>
-        <p><span style="color: #eee;">Və daha tez-tez 2 maşını müqayisə edərkən ən vacib səbəb "<strong>1-ci bənddir</strong>". Müzakirə etmək mənasızdır :)</span></p>
+        <p><span style="color: black;">Və daha tez-tez 2 maşını müqayisə edərkən ən vacib səbəb "<strong>1-ci bənddir</strong>". Müzakirə etmək mənasızdır :)</span></p>
       </div>
     </div>
     
@@ -398,20 +372,20 @@ body {
         <span class="arrow"></span>
       </button>
       <div class="content">
-        <p><a href="https://www.drive2.ru/l/624190278261019593/" target="_blank"><span style="color: #eee;">Drive2-də məlumat</span></a></p>
+        <p><a href="https://www.drive2.ru/l/624190278261019593/" target="_blank"><span style="color: black;">Drive2-də məlumat</span></a></p>
       </div>
     </div>
-    
+
     <div class="faq-card">
       <button class="collapsible">
         <span class="collapsible-text"><span class="collapsible-icon">+</span> Uğultunun səbəbini necə tapmalı?</span>
         <span class="arrow"></span>
       </button>
       <div class="content">
-        <p><span style="color: #eee;">Təmir məntəqəsində qaldırıcıda və ya baxış çuxurunda, qollardan tutaraq səs-küyün haradan gəldiyini eşitmək üçün sürətləndirmək lazımdır (bu, reduktordan gəlir, yoxsa yox?).</span></p>
-        <p><span style="color: #eee;">Əgər bunu etməmisinizsə və nasazlığın səbəbini öyrənmək istəyirsinizsə (xüsusan da bizdən soruşmaq istəyirsinizsə). "<strong>Biz fal aça bilərik!</strong>"</span></p>
-        <p><span style="color: #eee;">Sualınız "<strong>maksimum ətraflı</strong>" texniki məlumat ehtiva etməlidir (avtomobilin markası, modeli, nasazlığın təsviri, nə vaxt və necə yaranıb, hansı sürətdə və rejimdə özünü göstərir, bu nasazlığı tapmaq üçün nə etmisiniz və s.).</span></p>
-        <p><span style="color: #eee;">Məsələn: "<strong>"Aşağıdan nəsə uğuldayır, deyin görək nə ola bilər?"</strong>" kimi sual verməyin. Bizdə telepati yoxdur ki, belə məlumatsız suallara cavab verək, buna görə də "<strong>maksimum ətraflı yazın!</strong>"</span></p>
+        <p><span style="color: black;">Təmir məntəqəsində qaldırıcıda və ya baxış çuxurunda, qollardan tutaraq səs-küyün haradan gəldiyini eşitmək üçün sürətləndirmək lazımdır (bu, reduktordan gəlir, yoxsa yox?).</span></p>
+        <p><span style="color: black;">Əgər bunu etməmisinizsə və nasazlığın səbəbini öyrənmək istəyirsinizsə (xüsusan da bizdən soruşmaq istəyirsinizsə). "<strong>Biz fal aça bilərik!</strong>"</span></p>
+        <p><span style="color: black;">Sualınız "<strong>maksimum ətraflı</strong>" texniki məlumat ehtiva etməlidir (avtomobilin markası, modeli, nasazlığın təsviri, nə vaxt və necə yaranıb, hansı sürətdə və rejimdə özünü göstərir, bu nasazlığı tapmaq üçün nə etmisiniz və s.).</span></p>
+        <p><span style="color: black;">Məsələn: "<strong>"Aşağıdan nəsə uğuldayır, deyin görək nə ola bilər?"</strong>" kimi sual verməyin. Bizdə telepati yoxdur ki, belə məlumatsız suallara cavab verək, buna görə də "<strong>maksimum ətraflı yazın!</strong>"</span></p>
       </div>
     </div>
     
@@ -421,15 +395,15 @@ body {
             <span class="arrow"></span>
         </button>
         <div class="content">
-            <p><span style="color: #eee;">1. Diferensialın gövdəsi fırlanma anını ön təkərlər arasında bölür.</span></p>
-            <p><span style="color: #eee;">2. Yükü daha asan olan təkərə ötürür və həmişə güc tətbiq edir.</span></p>
-            <p><span style="color: #eee;">3. Razdatka həmişə fırlanır, kardan valı həmişə hərəkətdədir.</span></p>
-            <p><span style="color: #eee;">4. Arxa təkərlər həmişə fırlanır, onlara fırlanma anının minimum 10%-i həmişə gedir.</span></p>
-            <p><span style="color: #eee;">5. Əgər ön təkərlər sürüşürsə, yaxud bucaq sürəti sensorları, ABS şübhələnirsə, elektromaqnit sıxılır və fırlanma anının 50%-ə qədəri arxaya ötürülür.</span></p>
-            <p><span style="color: #eee;">6. Əgər 2 ön təkər fırlanırsa, mütləq kardandan fırlanma olmalıdır.</span></p>
-            <p><span style="color: #eee;">7. Əgər 4WD daimi yanırsa, deməli, arxa viskomuftaya gedən naqil qırılıb.</span></p>
-            <p><span style="color: #eee;">8. 4WD-nin yanıb-sönməsi, məsələn, sürüşkən yolda qəfil sıçrayış zamanı baş verə bilər; sonra bu səhv keçirsə, bu o demək deyil ki, problem şlislərdədir, bu, elektronika səhvi ola bilər.</span></p>
-            <p><span style="color: #eee;">9. Əgər sürüşmə zamanı 4WD həmişə yanıb-sönürsə və kardandan ön təkərlər fırlanmırsa, şlisləri yoxlamaq lazımdır.</span></p>
+            <p><span style="color: black;">1. Diferensialın gövdəsi fırlanma anını ön təkərlər arasında bölür.</span></p>
+            <p><span style="color: black;">2. Yükü daha asan olan təkərə ötürür və həmişə güc tətbiq edir.</span></p>
+            <p><span style="color: black;">3. Razdatka həmişə fırlanır, kardan valı həmişə hərəkətdədir.</span></p>
+            <p><span style="color: black;">4. Arxa təkərlər həmişə fırlanır, onlara fırlanma anının minimum 10%-i həmişə gedir.</span></p>
+            <p><span style="color: black;">5. Əgər ön təkərlər sürüşürsə, yaxud bucaq sürəti sensorları, ABS şübhələnirsə, elektromaqnit sıxılır və fırlanma anının 50%-ə qədəri arxaya ötürülür.</span></p>
+            <p><span style="color: black;">6. Əgər 2 ön təkər fırlanırsa, mütləq kardandan fırlanma olmalıdır.</span></p>
+            <p><span style="color: black;">7. Əgər 4WD daimi yanırsa, deməli, arxa viskomuftaya gedən naqil qırılıb.</span></p>
+            <p><span style="color: black;">8. 4WD-nin yanıb-sönməsi, məsələn, sürüşkən yolda qəfil sıçrayış zamanı baş verə bilər; sonra bu səhv keçirsə, bu o demək deyil ki, problem şlislərdədir, bu, elektronika səhvi ola bilər.</span></p>
+            <p><span style="color: black;">9. Əgər sürüşmə zamanı 4WD həmişə yanıb-sönürsə və kardandan ön təkərlər fırlanmırsa, şlisləri yoxlamaq lazımdır.</span></p>
         </div>
     </div>
 
@@ -439,7 +413,7 @@ body {
             <span class="arrow"></span>
         </button>
         <div class="content">
-            <p><span style="color: #eee;">1. Cihaz panelini test edin (bax yuxarıda necə etməli). 2. Tam doldurun və cihaz panelinin necə davrandığına baxın. Yanacaq səviyyəsi sensorları müqavimət əsasında yoxlanılır. Əgər səviyyə sensorlarının diaqnostikası nəticə vermirsə, deməli problem cihaz panelindədir.</span></p>
+            <p><span style="color: black;">1. Cihaz panelini test edin (bax yuxarıda necə etməli). 2. Tam doldurun və cihaz panelinin necə davrandığına baxın. Yanacaq səviyyəsi sensorları müqavimət əsasında yoxlanılır. Əgər səviyyə sensorlarının diaqnostikası nəticə vermirsə, deməli problem cihaz panelindədir.</span></p>
         </div>
     </div>
 
@@ -449,7 +423,7 @@ body {
             <span class="arrow"></span>
         </button>
         <div class="content">
-            <p><span style="color: #eee;">Özü-özünü diaqnostika virtual aparılmır. Üstəlik, internetdə ünsiyyət "canlı" diaqnostikanı əvəz etmir. Əksər hallarda siz fiziki iş görməli olacaqsınız, məsələn: avtomobilin altına girmək, yağ sızmasını yoxlamaq, reduktorda lyuftu ölçmək, avtomobili qaldırıb səs-küyün (uğultunun) haradan gəldiyini eşitmək və s.</span></p>
+            <p><span style="color: black;">Özü-özünü diaqnostika virtual aparılmır. Üstəlik, internetdə ünsiyyət "canlı" diaqnostikanı əvəz etmir. Əksər hallarda siz fiziki iş görməli olacaqsınız, məsələn: avtomobilin altına girmək, yağ sızmasını yoxlamaq, reduktorda lyuftu ölçmək, avtomobili qaldırıb səs-küyün (uğultunun) haradan gəldiyini eşitmək və s.</span></p>
         </div>
     </div>
 
@@ -459,7 +433,7 @@ body {
             <span class="arrow"></span>
         </button>
         <div class="content">
-            <p><span style="color: #eee;">Kompüter vasitəsilə, <a href="https://forscan.org/" target="_blank">forscan.org</a> proqramı ilə. Genişləndirilmiş lisenziya tələb olunur (2 ay pulsuz verilir). Məlumat: <a href="https://www.drive2.ru/l/583490206091485640/" target="_blank">Drive2-də məlumat</a>.</span></p>
+            <p><span style="color: black;">Kompüter vasitəsilə, <a href="https://forscan.org/" target="_blank">forscan.org</a> proqramı ilə. Genişləndirilmiş lisenziya tələb olunur (2 ay pulsuz verilir). Məlumat: <a href="https://www.drive2.ru/l/583490206091485640/" target="_blank">Drive2-də məlumat</a>.</span></p>
         </div>
     </div>
 
@@ -474,17 +448,17 @@ body {
       <div class="content">
         <h4>Ön suportların təmiri:</h4>
         <ul>
-            <li><span style="color: #eee;">Əyləc Bəndi (Naklatka): <strong>KASHIYAMA D3142</strong></span></li>
-            <li><span style="color: #eee;">Porşen: <strong>FRENKİT P455304</strong></span></li>
-            <li><span style="color: #eee;">Napravlayuşi (Paleç): <strong>Frenkit 809008</strong></span></li>
-            <li><span style="color: #eee;">Rezinlər: <strong>Mazda L2Y63326Z</strong></span></li>
+            <li><span style="color: black;">Əyləc Bəndi (Naklatka): <strong>KASHIYAMA D3142</strong></span></li>
+            <li><span style="color: black;">Porşen: <strong>FRENKİT P455304</strong></span></li>
+            <li><span style="color: black;">Napravlayuşi (Paleç): <strong>Frenkit 809008</strong></span></li>
+            <li><span style="color: black;">Rezinlər: <strong>Mazda L2Y63326Z</strong></span></li>
         </ul>
         <h4>Arxa suportların təmiri:</h4>
         <ul>
-            <li><span style="color: #eee;">Əyləc Bəndi (Naklatka): <strong>Kashiyama D3143H</strong></span></li>
-            <li><span style="color: #eee;">Rezinlər: <strong>Mazda L2Y62646ZA</strong></span></li>
-            <li><span style="color: #eee;">Napravlayuşi (Paleç): <strong>Frenkit 809024</strong></span></li>
-            <li><span style="color: #eee;">Porşen: <strong>FRENKIT P434802</strong></span></li>
+            <li><span style="color: black;">Əyləc Bəndi (Naklatka): <strong>Kashiyama D3143H</strong></span></li>
+            <li><span style="color: black;">Rezinlər: <strong>Mazda L2Y62646ZA</strong></span></li>
+            <li><span style="color: black;">Napravlayuşi (Paleç): <strong>Frenkit 809024</strong></span></li>
+            <li><span style="color: black;">Porşen: <strong>FRENKIT P434802</strong></span></li>
         </ul>
       </div>
     </div>
@@ -495,9 +469,9 @@ body {
         <span class="arrow"></span>
       </button>
       <div class="content">
-        <p><span style="color: #eee;">1. Əgər **dağlıq soyuq rayonları deyil** — büdcəyə uyğun istənilən disklər: Miles, Masuma, Bosh.</span></p>
-        <p><span style="color: #eee;">2. Əgər **dağlıq və soyuq rayonlarıdırsa** — ATE, Original, Zimerman, Brembo quraşdırmaq daha yaxşıdır.</span></p>
-        <p><span style="color: #eee;">3. P.S. Tayqa pisdir (zəifdir).</span></p>
+        <p><span style="color: black;">1. Əgər **dağlıq soyuq rayonları deyil** — büdcəyə uyğun istənilən disklər: Miles, Masuma, Bosh.</span></p>
+        <p><span style="color: black;">2. Əgər **dağlıq və soyuq rayonlarıdırsa** — ATE, Original, Zimerman, Brembo quraşdırmaq daha yaxşıdır.</span></p>
+        <p><span style="color: black;">3. P.S. Tayqa pisdir (zəifdir).</span></p>
       </div>
     </div>
 
@@ -507,24 +481,24 @@ body {
             <span class="arrow"></span>
         </button>
         <div class="content">
-            <p><span style="color: #eee;">**Dərhal əvəz etmək lazımdır.** Dəstlər (motorlar): <a href="https://sl.aliexpress.ru/p?key=XmNEZDF" target="_blank">AliExpress-də məlumat</a>. Diametr bərkidicilərsiz: 10.5, bərkidicilərlə: 12.5, hündürlük: 7.5. Həmçinin generator təmiri servisinə gedib, kolcu presləyib, təmizləyib, ola bilsin fırçaları (şotka) dəyişdirmək olar.</span></p>
+            <p><span style="color: black;">**Dərhal əvəz etmək lazımdır.** Dəstlər (motorlar): <a href="https://sl.aliexpress.ru/p?key=XmNEZDF" target="_blank">AliExpress-də məlumat</a>. Diametr bərkidicilərsiz: 10.5, bərkidicilərlə: 12.5, hündürlük: 7.5. Həmçinin generator təmiri servisinə gedib, kolcu presləyib, təmizləyib, ola bilsin fırçaları (şotka) dəyişdirmək olar.</span></p>
         </div>
     </div>
     
     <div class="faq-card">
-      <button class="collapsible">
-        <span class="collapsible-text"><span class="collapsible-icon">+</span> Mazda CX-9 üçün hansı yay (prujin) analoqları mövcuddur?</span>
-        <span class="arrow"></span>
-      </button>
-      <div class="content">
-        <p><span style="color: #eee;"><strong>Nömrələr:</strong></span></p>
+        <button class="collapsible">
+            <span class="collapsible-text"><span class="collapsible-icon">+</span> Mazda CX-9 üçün hansı yay (prujin) analoqları mövcuddur?</span>
+            <span class="arrow"></span>
+        </button>
+        <div class="content">
+            <p><span style="color: black;"><strong>Nömrələr:</strong></span></p>
             <ul>
-                <li><span style="color: #eee;"><strong>XP MZ213F</strong> — ön. Orijinal nömrə: <strong>TD76-34-011C</strong>.</span></li>
-                <li><span style="color: #eee;"><strong>XP MZ214R</strong> — arxa. Orijinal nömrə: <strong>TD13-28-011</strong>.</span></li>
+                <li><span style="color: black;"><strong>XP MZ213F</strong> — ön. Orijinal nömrə: <strong>TD76-34-011C</strong>.</span></li>
+                <li><span style="color: black;"><strong>XP MZ214R</strong> — arxa. Orijinal nömrə: <strong>TD13-28-011</strong>.</span></li>
             </ul>
-        <p><span style="color: #eee;"><strong>RockAuto-da:</strong> <strong>81628 MOOG</strong> — arxa, <strong>81629 MOOG</strong> — ön.</span></p>
-        <p><span style="color: #eee;"><strong>MEVOTECH:</strong> <strong>SMS81629</strong> — ön, <strong>SMS81628</strong> — arxa.</span></p>
-      </div>
+            <p><span style="color: black;"><strong>RockAuto-da:</strong> <strong>81628 MOOG</strong> — arxa, <strong>81629 MOOG</strong> — ön.</span></p>
+            <p><span style="color: black;"><strong>MEVOTECH:</strong> <strong>SMS81629</strong> — ön, <strong>SMS81628</strong> — arxa.</span></p>
+        </div>
     </div>
 
     <div class="faq-card">
@@ -533,12 +507,241 @@ body {
             <span class="arrow"></span>
         </button>
         <div class="content">
-            <p><span style="color: #eee;"><strong>Orijinal Nömrələr:</strong> BA1Z2005A, BA1Z2005AVX, BT4Z2005A, AT4Z2005A, AT4Z2005AFC, BA1Z2005AFC, 8T4Z2005A.</span></p>
-            <p><span style="color: #eee;"><strong>Analoji Nömrələr:</strong> CARDONE 5472020, MOTORCRAFT BRB48, MAZDA TDY14380ZA.</span></p>
-            <p><span style="color: #eee;"><strong>Vacib:</strong> Analoq tapan olmayıb və almayıb. **Hər kəs orijinal quraşdırır.**</span></p>
+            <p><span style="color: black;"><strong>Orijinal Nömrələr:</strong> BA1Z2005A, BA1Z2005AVX, BT4Z2005A, AT4Z2005A, AT4Z2005AFC, BA1Z2005AFC, 8T4Z2005A.</span></p>
+            <p><span style="color: black;"><strong>Analoji Nömrələr:</strong> CARDONE 5472020, MOTORCRAFT BRB48, MAZDA TDY14380ZA.</span></p>
+            <p><span style="color: black;"><strong>Vacib:</strong> Analoq tapan olmayıb və almayıb. **Hər kəs orijinal quraşdırır.**</span></p>
         </div>
     </div>
 
     <div class="faq-card">
         <button class="collapsible">
-            <span class="collapsible-text"><span class="collapsible-icon">+</span> Hansı orijinal şüşə silən (dvornik) rezinləri mövc
+            <span class="collapsible-text"><span class="collapsible-icon">+</span> Hansı orijinal şüşə silən (dvornik) rezinləri mövcuddur?</span>
+            <span class="arrow"></span>
+        </button>
+        <div class="content">
+            <ul>
+                <li><span style="color: black;"><strong>Ön sol rezin:</strong> EG21-67-333.</span></li>
+                <li><span style="color: black;"><strong>Ön sağ rezin:</strong> TD12-67-333.</span></li>
+                <li><span style="color: black;"><strong>Arxa rezin:</strong> G22E-67-333.</span></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="faq-card">
+      <button class="collapsible">
+        <span class="collapsible-text"><span class="collapsible-icon">+</span> 2007−2009-cu il üçün nasosun (pompa) dəyişdirilməsi üçün ehtiyat hissələrinin siyahısı</span>
+        <span class="arrow"></span>
+      </button>
+      <div class="content">
+        <p><strong>Ehtiyat hissələri:</strong></p>
+        <ul>
+          <li><span style="color: black;"><strong>CY01-12-613A</strong> — kiçik zəncir sakitləşdiricisi 1 (yeni nümunə) — 100% uyğundur. Necə quraşdırılacağı haqqında məlumat: (linklər)</span></li>
+          <li><span style="color: black;"><strong>CY01-12-614</strong> — kiçik zəncir sakitləşdiricisi 2</span></li>
+          <li><span style="color: black;"><strong>AA5Z8501D</strong> — Ford nasosu (pompa)</span></li>
+          <li><span style="color: black;"><strong>531089110</strong> — gərginlik rolikası</span></li>
+          <li><span style="color: black;"><strong>7T4Z-6C262-AA</strong> — Ford salniki (original: CY01-10-663)</span></li>
+          <li><span style="color: black;"><strong>CY01-12-201A</strong> — əsas zəncir.</span></li>
+          <li><span style="color: black;"><strong>CY0110235A</strong> — krışkanın salniki #1</span></li>
+          <li><span style="color: black;"><strong>CY01102D5</strong> — krışkanın salniki #2</span></li>
+          <li><span style="color: black;"><strong>CY01-10-602</strong> — ön dirsək mili (koleta) salniki</span></li>
+        </ul>
+        <p><strong>Əlavə mayelər:</strong> <span style="color: black;">12 litr yaşıl bahalı antifriz (revanol, fl22, akira) — istənilən, əsas odur ucuz olmasın. Hansı Soyuducu Maye tökülməlidir haqqında yuxarıda cavab var.</span></p>
+        <p><strong>Qeyri-məcburi rezinlər:</strong> <span style="color: black;">CY0110233 (şam (sveça) salniki), L567102D5 (faza sensoru rezinləri).</span></p>
+        <p><a href="https://www.drive2.ru/l/613350742878594008/" target="_blank"><span style="color: black;">Drive2-də ehtiyat hissələrinin şəkilləri.</span></a></p>
+        <p>"<strong>QEYD: Bütün ehtiyat hissələrinin nömrələri məlumat xarakterlidir və VIN üzrə kataloqla yenidən yoxlanılmalıdır.</strong>"</p>
+      </div>
+    </div>
+    
+    <div class="faq-card">
+      <button class="collapsible">
+        <span class="collapsible-text"><span class="collapsible-icon">+</span> 2008-ci il üçün Mühərrikin Əsaslı Təmiri üçün ehtiyat hissələri siyahısı</span>
+        <span class="arrow"></span>
+      </button>
+      <div class="content">
+        <p><strong>Ehtiyat hissələri:</strong></p>
+        <ul>
+          <li><span style="color: black;"><strong>MAZDA CY0112201A</strong> — zəncir 1əd</span></li>
+          <li><span style="color: black;"><strong>MAZDA CY0112231A</strong> — qalovkadakı zəncir 2 əd</span></li>
+          <li><span style="color: black;"><strong>MAZDA CY0112611</strong> — sakitləşdirici başmaq 1əd</span></li>
+          <li><span style="color: black;"><strong>MAZDA CY0112670</strong> — sakitləşdirici 1əd</span></li>
+          <li><span style="color: black;"><strong>MAZDA CY0111316</strong> — dişli 1əd</span></li>
+          <li><span style="color: black;"><strong>MAZDA CY0112425</strong> — dişli 2əd</span></li>
+          <li><span style="color: black;"><strong>MAZDA CY01125C0</strong> — gərginləşdirici 1əd</span></li>
+          <li><span style="color: black;"><strong>MAZDA CY0112520</strong> — gərginləşdirici 1əd</span></li>
+          <li><span style="color: black;"><strong>MAZDA CY0112500A</strong> — gərginləşdirici 1əd</span></li>
+          <li><span style="color: black;"><strong>MAZDA CY0112611</strong> — sakitləşdirici 1əd</span></li>
+          <li><span style="color: black;"><strong>MAZDA CY0112613A</strong> — sakitləşdirici 1əd</span></li>
+          <li><span style="color: black;"><strong>MAZDA CY0112614</strong> — sakitləşdirici 1əd</span></li>
+          <li><span style="color: black;"><strong>FORD 7T4Z6B080A</strong> — möhürləyici halqa 6əd</span></li>
+          <li><span style="color: black;"><strong>MAZDA CY0110233</strong> — möhürləyici halqa 2əd</span></li>
+          <li><span style="color: black;"><strong>MAZDA CY0110235A</strong> — klapan krışkasının salniki 1əd</span></li>
+          <li><span style="color: black;"><strong>MAZDA CY01102D5</strong> — klapan krışkasının salniki 1əd</span></li>
+          <li><span style="color: black;"><strong>MAZDA CY0110602</strong> — dirsək milinin ön salniki 1əd</span></li>
+          <li><span style="color: black;">"<strong>MAZDA CY0112428A</strong>" — Qalovkanın boltu 2 ədəd</span></li>
+          <li><span style="color: black;">"<strong>MAZDA ZZJ110155B</strong>" — Klapan salniki 24 ədəd</span></li>
+          <li><span style="color: black;">"<strong>L567102D5</strong>" — Şam (Sveça) salniki 6 ədəd</span></li>
+        </ul>
+        <p>"<strong>QEYD: Bütün ehtiyat hissələrinin nömrələri məlumat xarakterlidir və VIN üzrə kataloqla yenidən yoxlanılmalıdır.</strong>"</p>
+      </div>
+    </div>
+    
+    <div class="faq-card">
+      <button class="collapsible">
+        <span class="collapsible-text"><span class="collapsible-icon">+</span> 2011-ci ildən yuxarı model üçün nasosun (pompa) dəyişdirilməsi üçün ehtiyat hissələrinin siyahısı</span>
+        <span class="arrow"></span>
+      </button>
+      <div class="content">
+        <p><span style="color: black;">Ehtiyat hissələrinin tam siyahısı Excel və JPG formatında:</span></p>
+        <ul>
+          <li><a href="https://disk.yandex.ru/i/uD1G6Gx5noE2ug" target="_blank"><span style="color: black;">Excel faylına keçid</span></a></li>
+          <li><a href="https://disk.yandex.ru/d/viB_TmugOBXC_w" target="_blank"><span style="color: black;">JPG faylına keçid</span></a></li>
+        </ul>
+        <p><a href="https://www.drive2.ru/l/653077472379667985/" target="_blank"><span style="color: black;">Drive2-də ehtiyat hissələrinin şəkilləri, minimal rejim üçün siyahı.</span></a></p>
+        <p>"<strong>QEYD: Bütün ehtiyat hissələrinin nömrələri məlumat xarakterlidir və VIN üzrə kataloqla yenidən yoxlanılmalıdır.</strong>"</p>
+      </div>
+    </div>
+    
+    <div class="faq-card">
+      <button class="collapsible">
+        <span class="collapsible-text"><span class="collapsible-icon">+</span> Starterin təmiri (rebuild) üçün ehtiyat hissələri siyahısı</span>
+        <span class="arrow"></span>
+      </button>
+      <div class="content">
+        <p><span style="color: black;">[Yenilənmə 06/09/2024]</span></p>
+        <ul>
+          <li><span style="color: black;"><strong>Starter:</strong> Mazda CY01-18-400, Krauf STM1941BA</span></li>
+          <li><span style="color: black;"><strong>Arxa burc:</strong> Mazda N326-18-X62A, SBU9050 (AS), Cargo 140731, WAI 62−83303</span></li>
+          <li><span style="color: black;"><strong>Ön burc:</strong> Mazda LFG1-18-X01, SUM0319KS (Krauf), Cargo 140555, SBU9058 (AS)</span></li>
+          <li><span style="color: black;"><strong>Starterin ön qapağı:</strong> Mazda LFG1-18-X80, SBM4271BA (Krauf)</span></li>
+          <li><span style="color: black;"><strong>Starterin çəngəli (rığçaq):</strong> Mazda LFG1-18-X05</span></li>
+          <li><span style="color: black;"><strong>Çəkmə rele:</strong> Mazda CY01-18-X10, 133288 (Cargo), SNR3001 (Achim -Korea), SSM0549YJ (Krauf), VSR0304 (Startvolt)</span></li>
+          <li><span style="color: black;"><strong>Bendix (dişli):</strong> Mazda AJ34-18-X25, SDM6351HS (Krauf), 548351 (Wai)</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="faq-card">
+      <button class="collapsible">
+        <span class="collapsible-text"><span class="collapsible-icon">+</span> Sükan Gücləndiricisinin təmiri (rebuild) üçün ehtiyat hissələri siyahısı</span>
+        <span class="arrow"></span>
+      </button>
+      <div class="content">
+        <p><span style="color: black;">MSG NI001ROTOR, GUR nasosunun rotoru, statoru, plastikləri.</span></p>
+      </div>
+    </div>
+
+    <div class="faq-card">
+      <button class="collapsible">
+        <span class="collapsible-text"><span class="collapsible-icon">+</span> Hansı benzin nasosu uyğundur?</span>
+        <span class="arrow"></span>
+      </button>
+      <div class="content">
+        <p><span style="color: black;">Bosh 580 453 470.</span></p>
+      </div>
+    </div>
+
+    <div class="faq-card">
+      <button class="collapsible">
+        <span class="collapsible-text"><span class="collapsible-icon">+</span> Yanacaq filtrləri korpuslarının nömrələri hansılardır?</span>
+        <span class="arrow"></span>
+      </button>
+      <div class="content">
+        <p><span style="color: black;"><strong>2008-ci il üçün:</strong> CY03-13-ZE0, Masuma MFF-Z423.</span></p>
+        <p><span style="color: black;"><strong>2012-ci ildən yuxarı üçün:</strong> CA4313ZE0 ("<strong>Yalnız orijinal</strong>" var, analoqu yoxdur).</span></p>
+        <p><span style="color: black;">"<strong>Mütləq VIN üzrə yoxlayın.</strong>"</span></p>
+      </div>
+    </div>
+
+    <div class="faq-card">
+      <button class="collapsible">
+        <span class="collapsible-text"><span class="collapsible-icon">+</span> Yağ təzyiqi sensorunun nömrəsi hansıdır?</span>
+        <span class="arrow"></span>
+      </button>
+      <div class="content">
+        <p><span style="color: black;">1F20-18-501B.</span></p>
+      </div>
+    </div>
+    
+    <div class="faq-card">
+      <button class="collapsible">
+        <span class="collapsible-text"><span class="collapsible-icon">+</span> Orijinaldan başqa hansı Mühərrik Paduşkaları qoymaq olar?</span>
+        <span class="arrow"></span>
+      </button>
+      <div class="content">
+        <p><span style="color: black;">ME25060H JIKIU — psevdo-hidravlikdir, "<strong>İSTƏNİLƏN</strong>" analoqu götürmək olar. Orijinal kimi olmayacaq, amma uyğundur.</span></p>
+        <p><span style="color: black;">ZPSMZ058 NTY, FEBEST.</span></p>
+      </div>
+    </div>
+    
+    <div class="faq-card">
+      <button class="collapsible">
+        <span class="collapsible-text"><span class="collapsible-icon">+</span> Stupiça padşivnikləri nömrələri hansılardır?</span>
+        <span class="arrow"></span>
+      </button>
+      <div class="content">
+        <p><span style="color: black;"><strong>Ön padşivniklər:</strong> VKBA6849 (SKF), DAC4584W16CS71 (KOYO).</span></p>
+        <p><span style="color: black;"><strong>Arxa (stuplaya ilə birgə):</strong> 3DACF038D5C (KOYO), HW25015 (JIKIU), MW41506 (MASUMA).</span></p>
+      </div>
+    </div>
+    
+    <div class="faq-card">
+      <button class="collapsible">
+        <span class="collapsible-text"><span class="collapsible-icon">+</span> Arxa diferensial üçün hansı S/B nömrələri (saylentblok) uyğundur?</span>
+        <span class="arrow"></span>
+      </button>
+      <div class="content">
+        <p><span style="color: black;">HONDA 51391S5A024 ("<strong>dəyişiklik tələb olunur</strong>")<br>VTR MZ5101R</span></p>
+      </div>
+    </div>
+
+    <div class="faq-card">
+        <button class="collapsible">
+            <span class="collapsible-text"><span class="collapsible-icon">+</span> Razdatka sağ salnikdən yağ sızdırır, nə etməli?</span>
+            <span class="arrow"></span>
+        </button>
+        <div class="content">
+            <ul>
+                <li><span style="color: black;">Salnik: <strong>7T4Z-7R284-A</strong></span></li>
+                <li><span style="color: black;">Pılnik: <strong>12000699B</strong></span></li>
+                <li><span style="color: black;">Yağ: <strong>Ravenol 75W-140</strong></span></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="faq-card">
+        <button class="collapsible">
+            <span class="collapsible-text"><span class="collapsible-icon">+</span> Qapı tutacağındakı rezin düymənin nömrəsini deyin?</span>
+            <span class="arrow"></span>
+        </button>
+        <div class="content">
+            <p><span style="color: black;">TD12594B1A.</span></p>
+        </div>
+    </div>
+
+    <div class="faq-card">
+        <button class="collapsible">
+            <span class="collapsible-text"><span class="collapsible-icon">+</span> CX7-dən reduktor və mufta uyğun gəlirmi?</span>
+            <span class="arrow"></span>
+        </button>
+        <div class="content">
+            <p><span style="color: black;">Bəli, uyğun gəlir, amma MPS-dən quraşdırmaq daha da yaxşıdır və **özü özünə bloklanır** (əlavə olaraq).</span></p>
+        </div>
+    </div>
+
+  </div> </div> <script>
+var coll = document.getElementsByClassName("collapsible");
+for (var i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
+</body>
+</html>
